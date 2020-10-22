@@ -1,0 +1,39 @@
+#include <iostream>
+using namespace std;
+//IQRAM GANTENG SEKALI
+
+int main()
+{
+    int a, b, hasil;
+    char c;
+
+    cout << "Masukkan angka pertama: ";
+    cin >> a;
+
+    cout << "Masukkan angka kedua: ";
+    cin >> b;
+
+    cout << "Masukkan jenis operator: ";
+    cin >> c;
+
+    switch(c){
+        case '+' :
+            hasil = a + b;
+            break;
+        case '-' :
+            hasil = a - b;
+            break;
+        case '/' :
+            hasil = a / b;
+            break;
+        case '*' :
+            hasil = a * b;
+            break;
+        case '%' :
+            hasil = a % b;
+            break;
+    }
+
+    cout << "Hasilnya adalah " << hasil << endl;
+    return 0;
+}
