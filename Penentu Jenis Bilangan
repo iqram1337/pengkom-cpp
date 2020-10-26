@@ -1,0 +1,36 @@
+#include <iostream>
+using namespace std;
+
+//Nama : Iqram Haris Fahromi
+//NIM : 16420057 / FTTM
+//Desc: Program penentu jenis bilangan.
+
+int main()
+{
+
+// KAMUS
+    int x;                                                                                      // Kita hanya memerlukan tipe data integer.
+
+// ALGORITMA
+    cout << "Silahkan Masukkan Angka: ";
+    cin >> x;
+
+
+    cout << "=============================" << endl;                                            // Hiasan saja.
+
+
+        if ( x % 2 == 0 && x > 0) {                                                             // Menggunakan syarat "x mod 2 harus ekuivalen dengan 0 dan x lebih dari nol"
+                cout << "Angka " << x << " merupakan bilangan genap positif";}                  // Console out yang dikeluarkan berdasarkan jenis bilangan masing-masing.
+        else if (x % 2 != 0 && x > 0) {
+                cout << "Angka " << x << " merupakan bilangan ganjil positif"; }
+        else if (x < 0) {
+                cout << "Angka " << x << " merupakan bilangan negatif";}
+        else if (x == 0) {
+                cout << "Angka " << x << " merupakan bilangan nol"; }
+
+
+    cout << "" << endl;
+
+    return 0;
+
+}
