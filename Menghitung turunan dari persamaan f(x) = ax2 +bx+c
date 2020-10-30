@@ -1,0 +1,35 @@
+#include <iostream>
+using namespace std;
+
+//NAMA : Iqram Haris Fahromi
+//NIM : 16420057 / FTTM
+//DESC : Membuat program yang dapat menghitung turunan dari persamaan f(x) = ax2 +bx+c
+
+
+/* Tuan Mor sedang belajar mengenai turunan. Ia memiliki sebuah fungsi f (x) = ax2 +bx+c. Buatkan ia program
+untuk menghitung f'(x), yang merupakan turunan dari f(x)! */
+
+int main()
+{
+// KAMUS
+    int a, b, c, h1, h2;                                    // h1 = hasil 1, h2 = hasil 2
+
+//ALGORITMA
+    cout << "Masukkan a: ";
+    cin >> a;
+
+    cout << "Masukkan b: ";
+    cin >> b;
+
+    cout << "Masukkan c: ";
+    cin >> c;
+
+    h1= a*2;
+    h2= b;
+
+
+
+    cout << "Turunan dari f(x) adalah: " << h1 << "x"; if (h2 >=0) { cout << "+";} cout << h2 << endl;
+
+    return 0;
+}
