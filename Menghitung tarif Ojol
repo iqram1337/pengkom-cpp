@@ -3,6 +3,7 @@ using namespace std;
 
 //NAMA : Iqram Haris Fahromi
 //NIM : 16420057 / FTTM
+//TGL: 30 Oktober 2020
 //DESC : Menghitung tarif Ojol berdasarkan jarak destinasi.
 
 
