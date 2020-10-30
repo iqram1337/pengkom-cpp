@@ -1,0 +1,70 @@
+#include <iostream>
+using namespace std;
+
+//NAMA : Iqram Haris Fahromi
+//NIM : 16420057 / FTTM
+//DESC : Menghitung Pemenenang Asian Games.
+
+
+/* Soal: Tuan Mor beserta temannya Nona Clau sedang menonton Asian Games. Ia mendukung Indonesia dan Nona
+Clau mendukung Korea Selatan (karena ia suka musik Korea Selatan). Ia penasaran, dengan perolehan medali
+saat ini, siapa yang berpotensi memenangkan Asian Games?
+Ternyata, cara menentukan juara umum adalah sebagai berikut:
+1. Urutkan negara berdasarkan jumlah emas terbanyak.
+2. Jika ada negara yang jumlah emasnya sama, urutkan negara tersebut berdasarkan jumlah perak terbanyak.
+3. Jika ada negara yang jumlah emas dan peraknya sama, urutkan negara tersebut berdasarkan jumlah
+perunggu terbanyak.
+Kini ia tahu jumlah emas, perak, dan perunggu dari Indonesia dan Korea Selatan. Buatkan program supaya
+Tuan Mor tidak perlu menghitung berkali-kali!*/
+
+int main()
+{
+// KAMUS
+    int gi, si, bi, gks, bks, sks;          //gi = gold medal indonesia, si = silver medal indonesia, bi = bronze medal indonesia,
+                                            //gks = gold medal korea selatan, bks = bronze medal korea selatan, sks = silver medal korea selatan
+
+
+//  ALGORITMA
+    cout << "Masukkan perolehan emas Indonesia: ";
+    cin >> gi;
+
+    cout << "Masukkan perolehan perak Indonesia: ";
+    cin >> si;
+
+    cout << "Masukkan perolehan perunggu Indonesia: ";
+    cin >> bi;
+
+    cout << "----------------------------------------------" << endl;
+
+    cout << "Masukkan perolehan emas Korea Selatan: ";
+    cin >> gks;
+
+    cout << "Masukkan perolehan perak Korea Selatan: ";
+    cin >> sks;
+
+    cout << "Masukkan perolehan perunggu Korea Selatan: ";
+    cin >> bks;
+
+    cout << "==============================================" << endl;
+
+    if(gi > gks){
+        cout << "Pemenangnya adalah Indonesia";
+    }
+    else if( gks > gi) {
+        cout << "Pemenangnya adalah Korea Selatan";
+    }
+    else if( gks == gi && sks > si) {
+        cout << "Pemenangnya adalah Korea Selatan";
+    }
+    else if( gi == gks && si > sks) {
+        cout << "Pemenangnya adalah Indonesia";
+    }
+    else if( gi == gks && si == sks && bi > bks) {
+        cout << "Pemenangnya adalah Indonesia";
+    }
+    else if( gi == gks && sks == si && bks > bi) {
+        cout << "Pemenangnya adalah Korea Selatan";
+    }
+
+    return 0;
+}
