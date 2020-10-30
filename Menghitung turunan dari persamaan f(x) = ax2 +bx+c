@@ -3,6 +3,7 @@ using namespace std;
 
 //NAMA : Iqram Haris Fahromi
 //NIM : 16420057 / FTTM
+//TGL: 30 Oktober 2020
 //DESC : Membuat program yang dapat menghitung turunan dari persamaan f(x) = ax2 +bx+c
 
 
